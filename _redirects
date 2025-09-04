@@ -1,0 +1,7 @@
+# Redirect rules for Netlify
+/cac /cac.html 200
+/smedan /smedan.html 200
+/contact /#contact 301
+
+# SPA fallback
+/* /index.html 404

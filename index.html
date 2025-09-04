@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ademeg College - Excellence in Education</title>
+    <meta
+      name="description"
+      content="Ademeg College - Premier educational institution in Makoko Yaba, Lagos. Located at 10 Irepodun Street, offering world-class education with modern facilities and experienced faculty."
+    />
+    <meta name="keywords" content="Ademeg College, education, school, Lagos, Nigeria, Makoko Yaba, primary school, secondary school, excellence in education" />
+    <meta name="author" content="Ademeg College" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://ademeg-college.netlify.app/" />
+    <meta property="og:title" content="Ademeg College - Excellence in Education" />
+    <meta property="og:description" content="Premier educational institution in Makoko Yaba, Lagos. Located at 10 Irepodun Street, offering world-class education with modern facilities and experienced faculty." />
+    <meta property="og:image" content="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1757000884/ademeg_schools_kwp1gz.png" />
+    <meta property="og:site_name" content="Ademeg College" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://ademeg-college.netlify.app/" />
+    <meta property="twitter:title" content="Ademeg College - Excellence in Education" />
+    <meta property="twitter:description" content="Premier educational institution in Makoko Yaba, Lagos. Located at 10 Irepodun Street, offering world-class education with modern facilities and experienced faculty." />
+    <meta property="twitter:image" content="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1757000884/ademeg_schools_kwp1gz.png" />
+    
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#1e3a8a" />
+    <meta name="msapplication-TileColor" content="#1e3a8a" />
+    <link rel="canonical" href="https://ademeg-college.netlify.app/" />
+
+    <!-- Preload critical resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preload" href="styles.css" as="style" />
+    <link rel="preload" href="script.js" as="script" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1757000884/ademeg_schools_kwp1gz.png" />
+    <link rel="apple-touch-icon" href="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1757000884/ademeg_schools_kwp1gz.png" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Ademeg College",
+      "description": "Premier educational institution in Makoko Yaba, Lagos offering world-class education with modern facilities and experienced faculty.",
+      "url": "https://ademeg-college.netlify.app",
+      "logo": "https://res.cloudinary.com/dtj8ddr0t/image/upload/v1757000884/ademeg_schools_kwp1gz.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "10 Irepodun Street",
+        "addressLocality": "Makoko Yaba",
+        "addressRegion": "Lagos",
+        "addressCountry": "Nigeria"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+234-803-123-4567",
+        "contactType": "Admissions",
+        "email": "Ademegcollege@gmail.com"
+      },
+      "sameAs": [
+        "https://web.facebook.com/ademegcollege/about",
+        "https://x.com/AdemegS",
+        "https://www.instagram.com/tmogbojuri/"
+      ]
+    }
+    </script>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-content">
+        <div class="loading-logo">
+          <div class="logo-circle"></div>
+          <div class="logo-text">AC</div>
+        </div>
+        <div class="loading-bar">
+          <div class="loading-progress"></div>
+        </div>
+        <p class="loading-text">Loading Excellence...</p>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-brand">
+          <div class="brand-logo">
+            <img
+              src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1757000884/ademeg_schools_kwp1gz.png"
+              alt="Ademeg College Logo"
+              class="logo-image"
+            />
+          </div>
+          <div class="brand-text">
+            <h1>Ademeg College</h1>
+            <span>Excellence in Education</span>
+          </div>
+        </div>
+
+        <div class="nav-menu" id="navMenu">
+          <a href="#home" class="nav-link active" data-section="home">Home</a>
+          <a href="#about" class="nav-link" data-section="about">About</a>
+          <a href="#academics" class="nav-link" data-section="academics"
+            >Academics</a
+          >
+          <a href="#facilities" class="nav-link" data-section="facilities"
+            >Facilities</a
+          >
+          <a href="#admissions" class="nav-link" data-section="admissions"
+            >Admissions</a
+          >
+          <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+        </div>
+
+        <div class="nav-actions">
+          <a href="#admissions" class="btn btn-primary">Apply Now</a>
+          <button class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background">
+        <div class="hero-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+          <div class="shape shape-4"></div>
+        </div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <i class="fas fa-star"></i>
+            <span>Excellence Since 2010</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="title-line">Welcome to</span>
+            <span class="title-line highlight">Ademeg College</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Nurturing minds, building futures, and creating leaders through
+            comprehensive education in a supportive and innovative environment.
+          </p>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-target="500">0</span
+              ><span style="color: var(--accent-gold); font-size: 2rem">+</span>
+              <span class="stat-label">Students</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="50">0</span
+              ><span style="color: var(--accent-gold); font-size: 2rem">+</span>
+              <span class="stat-label">Teachers</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="15">0</span
+              ><span style="color: var(--accent-gold); font-size: 2rem">+</span>
+              <span class="stat-label">Years</span>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#admissions" class="btn btn-primary btn-large">
+              <span>Apply Now</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#about" class="btn btn-secondary btn-large">
+              <span>Learn More</span>
+              <i class="fas fa-info-circle"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-image-container">
+            <img
+              src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1756997817/ademegkids_ydudj8.jpg"
+              alt="Beautiful Student"
+              style="
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: var(--border-radius-lg);
+              "
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+        <span>Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- Image Slider Section -->
+    <section class="image-slider">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Campus Life</h2>
+          <p class="section-subtitle">
+            Take a tour of our beautiful campus and facilities
+          </p>
+        </div>
+
+        <div class="slider-container">
+          <div class="slider-wrapper" id="sliderWrapper">
+            <!-- Slider images will be populated here -->
+            <div class="slide">
+              <div class="slide-image">
+                <img
+                  src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1756997799/ademeg-principal_idxaaz.jpg"
+                  alt="Principal on Sports Field"
+                />
+              </div>
+              <div class="slide-caption">
+                <h3>Principal on Sports Field</h3>
+                <p>Leading by example in physical education and sports</p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slide-image">
+                <img
+                  src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1756997802/ballshegszy_lzik0x.jpg"
+                  alt="Sports Activities"
+                />
+              </div>
+              <div class="slide-caption">
+                <h3>Sports Activities</h3>
+                <p>Principal and students engaging in sports activities</p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slide-image">
+                <img
+                  src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1756997800/award_jyssaj.jpg"
+                  alt="Awards Ceremony"
+                />
+              </div>
+              <div class="slide-caption">
+                <h3>Awards Ceremony</h3>
+                <p>Celebrating student achievements with food and gifts</p>
+              </div>
+            </div>
+
+            <div class="slide">
+              <div class="slide-image">
+                <img
+                  src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1756997810/graduation_h2z0qx.jpg"
+                  alt="Graduation Ceremony"
+                />
+              </div>
+              <div class="slide-caption">
+                <h3>Graduation Ceremony</h3>
+                <p>Celebrating academic success and achievements</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="slider-nav slider-prev" id="sliderPrev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="slider-nav slider-next" id="sliderNext">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+
+          <div class="slider-dots" id="sliderDots">
+            <!-- Dots will be generated by JavaScript -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why Choose Ademeg College?</h2>
+          <p class="section-subtitle">
+            Discover what makes us the preferred choice for quality education
+          </p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card" data-aos="fade-up">
+            <div class="feature-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Academic Excellence</h3>
+            <p>
+              Comprehensive curriculum designed to foster critical thinking,
+              creativity, and a love for learning.
+            </p>
+          </div>
+
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Expert Faculty</h3>
+            <p>
+              Experienced and qualified teachers committed to nurturing each
+              student's potential.
+            </p>
+          </div>
+
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="feature-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>Modern Facilities</h3>
+            <p>
+              State-of-the-art infrastructure providing the perfect environment
+              for learning and growth.
+            </p>
+          </div>
+
+          <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="feature-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3>Holistic Development</h3>
+            <p>
+              Focus on academic, social, emotional, and physical development of
+              every student.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <div class="section-header">
+              <h2 class="section-title">About Ademeg College</h2>
+              <p class="section-subtitle">
+                Building foundations for lifelong success
+              </p>
+            </div>
+
+            <p class="about-description">
+              Founded with a vision to transform education, Ademeg College has
+              been a cornerstone of educational excellence in Makoko Yaba,
+              Lagos. Our commitment to nurturing young minds and building strong
+              foundations has made us a trusted name in quality education.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Comprehensive curriculum</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Experienced faculty</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Modern facilities</span>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i>
+                <span>Individual attention</span>
+              </div>
+            </div>
+
+            <a href="#about" class="btn btn-primary">Learn More</a>
+          </div>
+
+          <div class="about-visual">
+            <div class="about-image-container">
+              <img
+                src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1756998297/ademeg-environment_h3mehe.jpg"
+                alt="Students in Environment"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: var(--border-radius-lg);
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Founder & Vision Section -->
+    <section id="founder" class="founder">
+      <div class="container">
+        <div class="founder-content">
+          <div class="founder-image">
+            <!-- Founder image -->
+            <img
+              src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1756998823/heateacher_vjx1dg.jpg"
+              alt="School Founder"
+            />
+          </div>
+          <div class="founder-text">
+            <div class="section-header text-left">
+              <h2 class="section-title">Our Vision</h2>
+              <p class="section-subtitle">Inspired by our Founder</p>
+            </div>
+            <blockquote class="vision-quote">
+              <span class="vision-label">Vision:</span>
+              <span class="vision-text"
+                >TO CREATE A SOLID FOUNDATION OF LEARNING WHERE YOUNG MINDS ARE
+                NURTURED INTO INTEGRITY, ATTITUDES, KNOWLEDGE AND POWER.</span
+              >
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="academics" class="programs">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Academic Programs</h2>
+          <p class="section-subtitle">
+            Comprehensive educational programs for every stage of development
+          </p>
+        </div>
+
+        <div class="programs-grid">
+          <div class="program-card" data-aos="fade-up">
+            <div class="program-icon">
+              <i class="fas fa-baby"></i>
+            </div>
+            <h3>Early Years</h3>
+            <p>
+              Foundation programs for our youngest learners, focusing on
+              play-based learning and development.
+            </p>
+            <div class="program-features">
+              <span>Age 2-5</span>
+              <span>Play-based</span>
+              <span>Development-focused</span>
+            </div>
+          </div>
+
+          <div class="program-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="program-icon">
+              <i class="fas fa-child"></i>
+            </div>
+            <h3>Primary School</h3>
+            <p>
+              Comprehensive primary education with a focus on core subjects and
+              character development.
+            </p>
+            <div class="program-features">
+              <span>Age 6-11</span>
+              <span>Core subjects</span>
+              <span>Character building</span>
+            </div>
+          </div>
+
+          <div class="program-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="program-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3>Secondary School</h3>
+            <p>
+              Advanced secondary education preparing students for higher
+              education and future careers.
+            </p>
+            <div class="program-features">
+              <span>Age 12-17</span>
+              <span>Advanced subjects</span>
+              <span>Career preparation</span>
+            </div>
+          </div>
+
+          <div class="program-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="program-icon">
+              <i class="fas fa-book"></i>
+            </div>
+            <h3>Special Programs</h3>
+            <p>
+              Enrichment programs including arts, sports, technology, and
+              leadership development.
+            </p>
+            <div class="program-features">
+              <span>All ages</span>
+              <span>Enrichment</span>
+              <span>Leadership</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="facilities">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Our Facilities</h2>
+          <p class="section-subtitle">
+            State-of-the-art infrastructure for optimal learning
+          </p>
+        </div>
+
+        <div class="facilities-grid">
+          <div class="facility-card" data-aos="fade-up">
+            <div class="facility-icon">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <h3>Modern Classrooms</h3>
+            <p>
+              Spacious, well-lit classrooms equipped with modern teaching aids
+              and technology.
+            </p>
+          </div>
+
+          <div class="facility-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="facility-icon">
+              <i class="fas fa-flask"></i>
+            </div>
+            <h3>Science Labs</h3>
+            <p>
+              Fully equipped laboratories for practical learning in physics,
+              chemistry, and biology.
+            </p>
+          </div>
+
+          <div class="facility-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="facility-icon">
+              <i class="fas fa-laptop"></i>
+            </div>
+            <h3>Computer Lab</h3>
+            <p>
+              Modern computer laboratory with the latest technology for digital
+              literacy and coding.
+            </p>
+          </div>
+
+          <div class="facility-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="facility-icon">
+              <i class="fas fa-futbol"></i>
+            </div>
+            <h3>Sports Complex</h3>
+            <p>
+              Multi-purpose sports facilities including football field,
+              basketball court, and indoor games.
+            </p>
+          </div>
+
+          <div class="facility-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="facility-icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <h3>Library</h3>
+            <p>
+              Extensive collection of books, digital resources, and study spaces
+              for research and reading.
+            </p>
+          </div>
+
+          <div class="facility-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="facility-icon">
+              <i class="fas fa-bus"></i>
+            </div>
+            <h3>Transportation</h3>
+            <p>
+              Safe and reliable transportation services covering major routes in
+              the area.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Admissions Section -->
+    <section id="admissions" class="admissions">
+      <div class="container">
+        <div class="admissions-content">
+          <div class="admissions-text">
+            <div class="section-header">
+              <h2 class="section-title">Join Our Community</h2>
+              <p class="section-subtitle">
+                Take the first step towards excellence
+              </p>
+            </div>
+
+            <p class="admissions-description">
+              We welcome students who are eager to learn, grow, and achieve
+              their full potential. Our admission process is designed to be
+              transparent and supportive.
+            </p>
+
+            <div class="admissions-steps">
+              <div class="step-item">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h4>Application</h4>
+                  <p>Submit your application form with required documents</p>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h4>Assessment</h4>
+                  <p>Complete entrance assessment and interview</p>
+                </div>
+              </div>
+
+              <div class="step-item">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h4>Enrollment</h4>
+                  <p>Complete enrollment and join our community</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#contact" class="btn btn-primary btn-large"
+              >Start Application</a
+            >
+          </div>
+
+          <div class="admissions-visual">
+            <div class="admissions-image-container">
+              <img
+                src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1756997810/graduation_h2z0qx.jpg"
+                alt="Student Success"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: var(--border-radius-lg);
+                "
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Get in Touch</h2>
+          <p class="section-subtitle">We'd love to hear from you</p>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Address</h4>
+                <p>10 Irepodun Street, Makoko Yaba, Lagos, Nigeria</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Phone</h4>
+                <p>07016661930, 08056228326</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>Ademegcollege@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Office Hours</h4>
+                <p>Monday - Friday: 8:00 AM - 4:00 PM</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <input type="text" id="name" name="name" required />
+                <label for="name">Full Name</label>
+              </div>
+
+              <div class="form-group">
+                <input type="email" id="email" name="email" required />
+                <label for="email">Email Address</label>
+              </div>
+
+              <div class="form-group">
+                <input type="tel" id="phone" name="phone" required />
+                <label for="phone">Phone Number</label>
+              </div>
+
+              <div class="form-group">
+                <select id="subject" name="subject" required>
+                  <option value="">Select Subject</option>
+                  <option value="admissions">Admissions</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="facilities">Facilities</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                ></textarea>
+                <label for="message">Message</label>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-large">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img
+              src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1757000884/ademeg_schools_kwp1gz.png"
+              alt="Ademeg College Logo"
+              class="logo-image"
+            />
+          </div>
+          <h3>Ademeg College</h3>
+          <p>
+            Excellence in education, nurturing future leaders through
+            comprehensive learning experiences.
+          </p>
+
+          <div class="social-links">
+            <a
+              href="https://web.facebook.com/ademegcollege/about"
+              class="social-link"
+              aria-label="Facebook"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://x.com/AdemegS"
+              class="social-link"
+              aria-label="Twitter"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/tmogbojuri/"
+              class="social-link"
+              aria-label="Instagram"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#academics">Academics</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#admissions">Admissions</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Programs</h4>
+          <ul>
+            <li><a href="#academics">Early Years</a></li>
+            <li><a href="#academics">Primary School</a></li>
+            <li><a href="#academics">Secondary School</a></li>
+            <li><a href="#academics">Special Programs</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Student Portal</a></li>
+            <li><a href="#">Parent Portal</a></li>
+            <li><a href="#">Alumni</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="cac.html">CAC Certificate</a></li>
+            <li><a href="smedan.html">SMEDAN Certificate</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+          <p>&copy; 2024 Ademeg College. All rights reserved.</p>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Policy</a>
+            <span>|</span>
+            <span
+              >Acct: 0010009933 (Eco bank) - Ademeg N/P and college ltd</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
