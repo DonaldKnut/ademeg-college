@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   /* Color Palette - Sky Blue & Navy Blue Theme */
   --sky-blue: #87ceeb;
@@ -38,7 +45,7 @@
   --font-secondary: "Inter", sans-serif;
 
   /* Spacing */
-  --section-padding: 6rem 0;
+  --section-padding: 3rem 0;
   --container-padding: 0 2rem;
   --border-radius: 12px;
   --border-radius-lg: 20px;
@@ -483,6 +490,7 @@ p {
   align-items: center;
   overflow: hidden;
   padding-top: 60px;
+  padding-bottom: 2rem;
 }
 
 .hero-background {
