@@ -544,6 +544,8 @@ class AdemegCollegeWebsite {
     const prevBtn = document.getElementById("sliderPrev");
     const nextBtn = document.getElementById("sliderNext");
     const dotsContainer = document.getElementById("sliderDots");
+    const counter = document.getElementById("sliderCounter");
+    const progress = document.getElementById("sliderProgress");
 
     if (!sliderWrapper || !slides.length) return;
 
@@ -551,6 +553,7 @@ class AdemegCollegeWebsite {
     const totalSlides = slides.length;
     let autoPlayInterval;
     let isAutoPlaying = true;
+    let progressInterval;
 
     // Create dots
     slides.forEach((_, index) => {
@@ -570,6 +573,16 @@ class AdemegCollegeWebsite {
       dots.forEach((dot, index) => {
         dot.classList.toggle("active", index === currentSlide);
       });
+
+      // Update counter
+      if (counter) {
+        counter.textContent = `${currentSlide + 1} / ${totalSlides}`;
+      }
+
+      // Update progress
+      if (progress) {
+        progress.style.width = `${((currentSlide + 1) / totalSlides) * 100}%`;
+      }
     }
 
     function goToSlide(index) {
