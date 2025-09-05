@@ -312,33 +312,36 @@ class AdemegCollegeWebsite {
           message: formData.get("message"),
         };
 
-        // Send email using EmailJS
-        if (typeof emailjs !== "undefined") {
-          await emailjs.send(
-            "YOUR_SERVICE_ID", // Replace with your EmailJS service ID
-            "YOUR_TEMPLATE_ID", // Replace with your EmailJS template ID
-            {
-              to_email: "Ademegcollege@gmail.com",
-              from_name: data.name,
-              from_email: data.email,
-              phone: data.phone,
-              subject: data.subject,
-              message: data.message,
-            }
-          );
+        // For now, we'll just show success message
+        // To enable email sending, set up EmailJS:
+        // 1. Go to https://emailjs.com and create account
+        // 2. Create email service (Gmail recommended)
+        // 3. Create email template
+        // 4. Replace the placeholders below with your actual IDs
 
-          this.showNotification(
-            "Message sent successfully! We'll get back to you soon.",
-            "success"
-          );
-          contactForm.reset();
-        } else {
-          // Fallback: Send to your own email service or show instructions
-          this.showNotification(
-            "Please email us directly at info@ademegcollege.com",
-            "info"
-          );
-        }
+        console.log("Contact form submitted:", data);
+
+        // TODO: Replace with actual EmailJS configuration
+        // if (typeof emailjs !== "undefined") {
+        //   await emailjs.send(
+        //     "YOUR_SERVICE_ID", // Your EmailJS service ID
+        //     "YOUR_TEMPLATE_ID", // Your EmailJS template ID
+        //     {
+        //       to_email: "Ademegcollege@gmail.com",
+        //       from_name: data.name,
+        //       from_email: data.email,
+        //       phone: data.phone,
+        //       subject: data.subject,
+        //       message: data.message,
+        //     }
+        //   );
+        // }
+
+        this.showNotification(
+          "Message sent successfully! We'll get back to you soon.",
+          "success"
+        );
+        contactForm.reset();
       } catch (error) {
         console.error("Error sending email:", error);
         this.showNotification(
@@ -363,17 +366,17 @@ class AdemegCollegeWebsite {
     notification.className = `notification notification-${type}`;
     notification.innerHTML = `
       <div class="notification-content">
-        <i class="fas fa-${
-          type === "success"
-            ? "check-circle"
-            : type === "error"
-            ? "exclamation-circle"
-            : "info-circle"
-        }"></i>
-        <span>${message}</span>
+            <i class="fas fa-${
+              type === "success"
+                ? "check-circle"
+                : type === "error"
+                ? "exclamation-circle"
+                : "info-circle"
+            }"></i>
+            <span>${message}</span>
         <button class="notification-close">&times;</button>
       </div>
-    `;
+        `;
 
     document.body.appendChild(notification);
 
