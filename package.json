@@ -1,0 +1,31 @@
+{
+  "name": "ademeg-college-website",
+  "version": "1.0.0",
+  "description": "Official website for Ademeg College - Excellence in Education",
+  "main": "index.html",
+  "scripts": {
+    "build": "echo 'Static site - no build required'",
+    "dev": "python -m http.server 8000",
+    "serve": "python -m http.server 8000",
+    "deploy": "echo 'Deploy to Netlify'"
+  },
+  "keywords": [
+    "education",
+    "college",
+    "school",
+    "ademeg",
+    "website"
+  ],
+  "author": "Ademeg College",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ademeg-college/website"
+  },
+  "homepage": "https://ademeg-college.netlify.app",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
