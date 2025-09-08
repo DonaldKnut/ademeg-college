@@ -251,7 +251,7 @@
           <div class="hero-visual">
             <div class="hero-image-container">
               <img
-                src="https://res.cloudinary.com/dtj8ddr0t/image/upload/v1756997817/ademegkids_ydudj8.jpg"
+                src="https://res.cloudinary.com/dtj8ddr0t/image/upload/ademegkids_ydudj8.jpg"
                 alt="Beautiful Student"
                 style="
                   width: 100%;
@@ -259,7 +259,24 @@
                   object-fit: cover;
                   border-radius: var(--border-radius-lg);
                 "
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='block';"
               />
+              <img
+                src="assets/css/IMG_8633 (1).jpeg"
+                alt="Ademeg College Students"
+                style="
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  border-radius: var(--border-radius-lg);
+                  display: none;
+                "
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+              />
+              <div class="hero-image-placeholder" style="display: none">
+                <i class="fas fa-graduation-cap"></i>
+                <p>Ademeg College Students</p>
+              </div>
             </div>
           </div>
         </div>
