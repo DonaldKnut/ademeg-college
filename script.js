@@ -52,10 +52,24 @@ class AdemegCollegeWebsite {
     });
 
     // Mobile menu toggle
-    navToggle.addEventListener("click", () => {
+    navToggle.addEventListener("click", (e) => {
+      e.stopPropagation();
       navToggle.classList.toggle("active");
       navMenu.classList.toggle("active");
       document.body.classList.toggle("nav-open");
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener("click", (e) => {
+      if (
+        navMenu.classList.contains("active") &&
+        !navMenu.contains(e.target) &&
+        !navToggle.contains(e.target)
+      ) {
+        navToggle.classList.remove("active");
+        navMenu.classList.remove("active");
+        document.body.classList.remove("nav-open");
+      }
     });
 
     // Close mobile menu when clicking on links
@@ -65,6 +79,31 @@ class AdemegCollegeWebsite {
         navMenu.classList.remove("active");
         document.body.classList.remove("nav-open");
       });
+    });
+
+    // Add swipe-to-close functionality for mobile menu
+    let startX = 0;
+    let startY = 0;
+
+    navMenu.addEventListener("touchstart", (e) => {
+      startX = e.touches[0].clientX;
+      startY = e.touches[0].clientY;
+    });
+
+    navMenu.addEventListener("touchmove", (e) => {
+      if (!navMenu.classList.contains("active")) return;
+
+      const currentX = e.touches[0].clientX;
+      const currentY = e.touches[0].clientY;
+      const diffX = startX - currentX;
+      const diffY = startY - currentY;
+
+      // If horizontal swipe is greater than vertical and exceeds threshold
+      if (Math.abs(diffX) > Math.abs(diffY) && diffX > 50) {
+        navToggle.classList.remove("active");
+        navMenu.classList.remove("active");
+        document.body.classList.remove("nav-open");
+      }
     });
 
     // Active navigation highlighting
